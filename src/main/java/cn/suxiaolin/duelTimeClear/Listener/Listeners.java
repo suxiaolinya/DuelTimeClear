@@ -66,7 +66,9 @@ public class Listeners implements Listener {
             for (String key : blockMap.keySet()) {
                 if (key.equals(arena)) {
                     for (Location location : blockMap.get(key)) {
-                        location.getBlock().setType(Material.AIR);
+                        Bukkit.getScheduler().runTaskLater(plugin, () -> {
+                            location.getBlock().setType(Material.AIR);
+                        },4L);
                     }
                     blockMap.remove(key);
                 }
