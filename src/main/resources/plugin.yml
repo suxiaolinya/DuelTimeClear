@@ -1,0 +1,6 @@
+name: DuelTimeClear
+version: '1.0.0'
+main: cn.suxiaolin.duelTimeClear.DuelTimeClear
+api-version: '1.20'
+authors: [ suxiaolin ]
+depend: [ DuelTime ]
